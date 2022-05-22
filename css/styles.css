@@ -9,11 +9,13 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
+    background-color: var(--secondary-brand-color);
 }
+
 
 /* ------------------------------------------HEADER-------------------------------------------------- */
 .header {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
 
 .logo {
