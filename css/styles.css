@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-    width: 1230px;
+    width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -85,14 +85,21 @@ color: var(--color-accent)
 }
  /* --------------------------------------MAIN---------------------------------- */
 
+.main {
+text-align: center;
+}
+
 .main-title {
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
-text-align: center;
+
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: #FFFFFF;
+margin-bottom: 30px;
+padding: auto;
+
 
 }
 
@@ -111,6 +118,8 @@ letter-spacing: 0.06em;
 color: #FFFFFF;
 background-color: var(--color-accent);
 cursor: pointer;
+margin: auto;
+
 }
 
 .subtitle {
