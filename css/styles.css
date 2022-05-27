@@ -24,20 +24,24 @@ ul, ol {
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
-    background-color: var(--secondary-brand-color);
+    /* background-color: var(--secondary-brand-color); */
+    background-color: #E5E5E5;
 }
 
 .container {
-    width: 1200px;
+    width: 1230px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
 /* ------------------------------------------HEADER-------------------------------------------------- */
 .header {
     background-color: #ffffff;    
 }
+
 
 .logo {
 font-family: 'Raleway';
@@ -55,6 +59,21 @@ color: var(--primary-text-color);
 
 .current {
 color:var(--color-accent);
+}
+
+.site-nav {
+display: flex;
+margin-left: 93px;
+}
+
+.site-nav .item + .item {
+margin-left: 50px;
+}
+
+.site-nav .link {
+display: block;
+padding-top: 32px;
+padding-bottom: 32px;
 }
 
 .site-nav a,
@@ -77,30 +96,43 @@ color: #212121;
 color: var(--secondary-text-color);
 }
 
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.auth-nav .item + .item {
+    margin-left: 50px;
+}
+
 .site-nav a:hover,
 .site-nav a:focus,
 .auth-nav a:hover,
 .auth-nav a:focus {
 color: var(--color-accent)
 }
+
+.main-list {
+    display: flex;
+    align-items: center;
+}
+
  /* --------------------------------------MAIN---------------------------------- */
 
 .main {
 text-align: center;
+background-color: #E5E5E5;
 }
 
 .main-title {
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
-
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: #FFFFFF;
 margin-bottom: 30px;
-padding: auto;
-
-
+padding: 200px 280px;
 }
 
 .btn {
@@ -138,6 +170,15 @@ letter-spacing: 0.03em;
 color: #757575;
 }
 
+.aaa {
+    display: flex;
+    
+}
+
+.list-img {
+    display: flex;
+}
+
 .heading {
 font-weight: 700;
 font-size: 36px;
@@ -145,6 +186,10 @@ line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
+}
+
+.list-name {
+    display: flex;
 }
 
 .name {
@@ -175,6 +220,12 @@ background-color: var(--brand-color)
 text-decoration: none;
  }
 
+ .list-button {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-right: 30px;
+ }
 
  .btn-list {
 border-radius: 4px;
@@ -195,6 +246,12 @@ cursor: pointer;
      color: #FFFFFF;
      background-color: var(--color-accent);
  }
+
+.list-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
  .list-title {
 font-weight: 700;
