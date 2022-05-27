@@ -1,9 +1,9 @@
 :root {
-    --primary-text-color: #212121;
-    --secondary-text-color: #757575;
-    --brand-color: #2F303A;
-    --secondary-brand-color: #F5F4FA;
-    --color-accent: #2196F3;
+--primary-text-color: #212121;
+--secondary-text-color: #757575;
+--brand-color: #2F303A;
+--secondary-brand-color: #F5F4FA;
+--color-accent: #2196F3;
 }
 
 p,
@@ -12,36 +12,32 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    margin: 0;
+h6 {margin: 0;
 }
 
 ul, ol {
-    margin: 0;
-    padding-left: 0;
+margin: 0;
+padding-left: 0;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--primary-text-color);
-    /* background-color: var(--secondary-brand-color); */
-    background-color: #E5E5E5;
+body {font-family: 'Roboto', sans-serif;color: var(--primary-text-color);/* background-color: var(--secondary-brand-color); */background-color: #E5E5E5;
 }
 
 .container {
-    width: 1230px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    /* margin-left: auto;
-    margin-right: auto; */
+width: 1230px;
+margin: 0 auto;
+padding-left: 15px;
+padding-right: 15px;
 }
 
-/* ------------------------------------------HEADER-------------------------------------------------- */
+/* -------------------------------HEADER-------------------------------------------------- */
 .header {
-    background-color: #ffffff;    
+background-color: #ffffff;    
 }
 
+.border {
+border: 1px solid #ECECEC
+}
 
 .logo {
 font-family: 'Raleway';
@@ -89,7 +85,7 @@ letter-spacing: 0.02em;
 color: #212121;
 }
 .site-nav .link.current {
-    color: var(--color-accent);
+color: var(--color-accent);
 }
 
 .auth-nav a {
@@ -97,12 +93,12 @@ color: var(--secondary-text-color);
 }
 
 .auth-nav {
-    display: flex;
-    margin-left: auto;
+display: flex;
+margin-left: auto;
 }
 
 .auth-nav .item + .item {
-    margin-left: 50px;
+margin-left: 50px;
 }
 
 .site-nav a:hover,
@@ -113,17 +109,18 @@ color: var(--color-accent)
 }
 
 .main-list {
-    display: flex;
-    align-items: center;
+display: flex;
+align-items: center;
 }
 
- /* --------------------------------------MAIN---------------------------------- */
+ /* -----------------------------MAIN---------------------------------- */
 
 .main {
 text-align: center;
-background-color: #E5E5E5;
 }
-
+.main-info {
+background-color: #FFFFFF;
+}
 .main-title {
 font-weight: 900;
 font-size: 44px;
@@ -132,7 +129,13 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 color: #FFFFFF;
 margin-bottom: 30px;
-padding: 200px 280px;
+padding-top: 200px;
+/* padding: 200px 280px; */
+
+}
+
+.button {
+padding-bottom: 200px;
 }
 
 .btn {
@@ -152,6 +155,7 @@ background-color: var(--color-accent);
 cursor: pointer;
 margin: auto;
 
+
 }
 
 .subtitle {
@@ -170,13 +174,21 @@ letter-spacing: 0.03em;
 color: #757575;
 }
 
-.aaa {
-    display: flex;
-    
+.list-benefits {
+display: flex;
+padding: 94px;
+}
+
+.list-benefits .list + .list {
+margin-left: 30px;
 }
 
 .list-img {
-    display: flex;
+display: flex;
+}
+
+.list-img .list + .list {
+margin-left: 30px;
 }
 
 .heading {
@@ -186,10 +198,20 @@ line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
+margin-bottom: 50px;
+}
+
+.team {
+padding-top: 94px;
 }
 
 .list-name {
-    display: flex;
+display: flex;
+padding-bottom: 94px;
+}
+
+.list-name .list + .list {
+margin-left: 30px;
 }
 
 .name {
@@ -216,18 +238,23 @@ list-style: none;
 .main {
 background-color: var(--brand-color)
 }
- .link {
+.link {
 text-decoration: none;
- }
+}
 
- .list-button {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin-right: 30px;
- }
+.list-button {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 30px;
+margin-bottom: 34px;
+}
 
- .btn-list {
+.list-button .list + .list {
+margin-left: 8px;
+}
+
+.btn-list {
 border-radius: 4px;
 padding:  6px 22px;
 font-family: 'Roboto';
@@ -240,26 +267,47 @@ letter-spacing: 0.03em;
 color: #212121;
 background-color: var(--secondary-brand-color);
 cursor: pointer;
- }
-
- .btn-list:hover {
-     color: #FFFFFF;
-     background-color: var(--color-accent);
- }
-
-.list-work {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
- .list-title {
+.btn-list:hover {
+color: #FFFFFF;
+background-color: var(--color-accent);
+}
+
+.list-work {
+display: flex;
+flex-wrap: wrap;
+/* padding-bottom: 94px; */
+}
+
+.list-work .list {
+margin-right: 30px;
+margin-bottom: 30px;
+}
+
+.list-work .list:nth-child(3n) {
+margin-right: 0;
+}
+
+.list-work .list:nth-last-child(-n + 3) {
+margin: 0;
+}
+
+/* .border-work {
+border: 1px solid #ECECEC;
+} бордер в секции начиная с технокряк */
+
+/* .images {
+display: block;
+} */
+
+.list-title {
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color: #212121;
- }
+}
 
 .list-text {
 font-size: 16px;
@@ -267,7 +315,7 @@ line-height: 1.9;
 letter-spacing: 0.03em;
 color: var(--secondary-text-color);
 }
-/* ------------------------------------------FOOTER-------------------------------- */
+/* -------------------------------FOOTER-------------------------------- */
 .footer {
 background-color: var(--brand-color);
 }
@@ -275,8 +323,12 @@ background-color: var(--brand-color);
 color: #FFFFFF;
 }
 
+.contact {
+/* display: flex;
+align-content: space-evenly; */
+}
 .address {
-    font-style: normal;
+font-style: normal;
 font-size: 14px;
 line-height: 1.17;
 letter-spacing: 0.03em;
@@ -284,7 +336,7 @@ color: #FFFFFF;
 }
 
 .address:hover {
-    color: var(--color-accent);
+color: var(--color-accent);
 }
 
 .mailtel {
