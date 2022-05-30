@@ -302,7 +302,7 @@ margin-right: 30px;
 margin-bottom: 30px;
 }
 
-.list-work .list:nth-last-child(-n + 3) {
+/* .list-work .list:nth-last-child(-n + 3) {
 margin: 0;
 } */
 
